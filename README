@@ -23,7 +23,7 @@ Maya 2013+
 1- load the plugin in maya
 2- select mesh you want to affect
 3- run the following mel command:
-    deformer -type relax_node -af
+    deformer -type relaxNode -af
 4- paint the areas and weights you want
 5- enable the node by setting the number of iteration (0 by default to disable the node untill you paint your areas)
 6- play around with strength, iterations and steps attributes
