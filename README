@@ -1,0 +1,33 @@
+# Copyright (c) 2012-2013 Guillaume Barlier
+# This file is part of "relax_node" and covered by the LGPLv3 or later,
+# read COPYING and COPYING.LESSER for details.
+
+You can check for new version on my website:
+http://guillaume.barlier.com/
+
+## DESCRIPTIONS
+The relax_node is a deformer plugin for Maya.
+It performs a simple relax on mesh surfaces
+
+## FEATURES
+-Vertices deformation weights, that will greatly improve speed by skipping "unaffected vtx" 
+-Animate the relaxing effect to fix specific time range where you would have the problem
+-Set the strength (0-1) to set the strengh of the relax effect
+-Set the number of iterations, each iteration is like adding an extra relax_node to increas effect
+-Set the number of steps, that defines the number of iterations performed for precision
+
+## DEPENDENCIES
+Maya 2013+ 
+
+## HOW TO USE
+1- load the plugin in maya
+2- select mesh you want to affect
+3- run the following mel command:
+    deformer -type relax_node -af
+4- paint the areas and weights you want
+5- enable the node by setting the number of iteration (0 by default to disable the node untill you paint your areas)
+6- play around with strength, iterations and steps attributes
+
+
+Anjoy,
+Guillaume
