@@ -62,7 +62,7 @@ class RelaxNode(OpenMayaMPx.MPxDeformerNode):
         cls.addAttribute(cls._steps_attr)
         
         # Update affectation list
-        outputGeom = OpenMayaMPx.cvar.MPxDeformerNode_outputGeom
+        outputGeom = OpenMayaMPx.cvar.MPxGeometryFilter_outputGeom
         cls.attributeAffects( cls._strength_attr, outputGeom )
         cls.attributeAffects( cls._iteration_attr, outputGeom )
         cls.attributeAffects( cls._steps_attr, outputGeom )
